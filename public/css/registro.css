@@ -1,0 +1,94 @@
+input.succesfull{
+    border: 3px solid green;
+}
+input.incorrect {
+    border: 1px solid red;
+}
+
+p.succesfull{
+    color: green;
+    display: block;
+    width: 100%;
+}
+p.incorrect {
+    color: red;
+    display: block;
+    width: 100%;
+}
+.form-control {
+    padding: 15px;
+}
+.input-control {
+    margin: 15px 0px;
+}
+.input-control p{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+.input-text label {
+    display: none;
+}
+
+.input-control input[type="text"],
+.input-control input[type="date"],
+.input-control input[type="file"],
+.input-control input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border-color: white;
+}
+.group-checkbox input[type="checkbox"]{
+   margin: 15px;
+}
+.group-radio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.group-radio p{
+  width: 100%;
+}
+.button-control {
+    margin-top: 25px;
+}
+.button-control button[type="submit"] {
+   background-color: green;
+   padding: 8px;
+   color: white;
+   border-radius: 7px;
+}
+.button-control button[type="reset"] {
+    background-color: red;
+    padding: 8px;
+    color: white;
+    border-radius: 7px;
+    margin-right: 10px;
+ }
+
+ @media (min-width:361px) {
+     .form-control {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+     }
+    .input-control {
+        width: 45%;
+    }
+    .input-text label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-style: italic;
+    }
+ }
+
+ @media (min-width:769px) {
+     .form-control{
+         width: 80%;
+         margin: auto;
+     }
+ }
+
+

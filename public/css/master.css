@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background-color: #EAC926;
+    font-size: 14px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#logo {
+    width: 50%;
+    padding: 20px 0px  0px 20px;
+}
+#buscar {
+    width: 50%;
+    display: flex;
+    padding: 20px 18px  0px 10px;
+    position: relative;
+}
+#buscar input {
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+}
+.search-btn {
+    background-color: white;
+    padding: 3px;
+    position: absolute;
+    right: 19px;
+    margin-top: 4px;
+   text-align: center;
+   border: none;
+   
+}
+.search:hover{
+    cursor: pointer;
+}
+body {
+    margin: 0px;
+    background-color: #EBEBEB;
+}
+#cuotas {
+    text-align: center;
+    margin:20px 0px;
+    width: 100%;
+}
+.icon {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+.burger {
+    background-color: #1259c3;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.burger-menu {
+    text-align: center;
+}
+ul li i {
+    margin-left: 5px;
+}
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+.banner {
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+.precio{
+    font-size: 2.2vh;
+    width:30%;
+}
+.descuento {
+    font-size: 2vh;
+    margin-top:0px;
+    color:#39b54a;
+    width:70%;
+}
+.descripcion {
+    font-size: 16px;
+    color:#666;
+    display: none
+}
+.individual-article:hover .descripcion{
+     display: block;
+}
+.individual-article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.individual-article .envio{
+    transition: transform 2s;
+}
+.individual-article:hover .envio{
+    transform: rotate(-360deg);
+}
+
+.cuerpo {
+    font-size: 12px;
+    color: #666;
+}
+.titular {
+    font-size: 24px;
+}
+footer {
+    text-align: center;
+    background-color: white;
+}
+.item-footer {
+    padding-left:70px;
+    padding-right: 70px;
+}
+.item-footer p,
+.item-footer div {
+  margin: 0px;
+}
+.item-footer .icon {
+    color: #03264C;
+    margin-top: 70px;
+}
+.footer-title {
+    color: #666;
+}
+.copyrigth {
+    text-align: left;
+    margin: 40px 0px 20px 20px;
+}
+.articulos img{
+    width: 100%;
+}
+.articulos {
+    width: 90%;
+    margin: auto;
+}
+.individual-article {
+    margin-bottom: 10px;
+    background-color: white;
+}
+.detalles {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.envio {
+display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+color:  #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+}
+
+.menu a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+}
+.menu{
+    display: none;
+}
+
+@media (min-width:361px) {
+    .descripcion {
+        display: block;
+        margin-top: 15px;
+    }
+    .individual-article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .menu {
+        display: flex;
+        width: 95%;
+    }
+    .menu ul {
+        margin-top: 25px;
+    }
+    .menu ul li a {
+        font-size: 1.8vw;
+    }
+    .burger-menu {
+        display: none;
+    }
+    #logo,
+    #buscar,
+    #cuotas {
+        width: 33%;
+    }
+    #cuotas {
+        padding-top: 20px;
+    }
+    #lista-menu1{
+        width: 50%;
+        display: flex;
+    }
+    #lista-menu2{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .articulos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .titular {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .individual-article {
+        width: 45%;
+    }
+    .precio{
+        font-size: 2.2vw;
+    }
+    .descuento{
+        font-size: 2vw;
+    }
+}
+
+@media (min-width:769px) {
+    .menu ul {
+        margin-top: 35px;
+    }
+    .menu ul li a {
+        font-size: 1.2vw;
+    }
+    #buscar{
+        align-items: center;
+    }
+    #buscar input {
+        width: 85%;
+        margin-left: 20px;
+    }
+    .search {
+        position: static;
+        font-size: 16px;
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+    .articulos{
+        justify-content: flex-start;
+    }
+    .individual-article {
+        width: 22%;
+        margin-right: 3%;
+    }
+    .precio{
+        font-size: 1.1vw;
+    }
+    .descuento{
+        font-size: 1vw;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .item-footer {
+        width: 30%;
+    }
+    .item-footer:hover i {
+        color:#39b54a;
+    }
+}
+
